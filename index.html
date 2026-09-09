@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Macabale - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0A192F',
+                        slateDark: '#1E293B',
+                        tealAccent: '#0EA5E9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-navy text-slate-300 font-sans leading-relaxed selection:bg-tealAccent selection:text-navy">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-navy/90 backdrop-blur border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white tracking-wide">
+                CHRISTIAN <span class="text-tealAccent">MACABALE</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-tealAccent transition-colors">About</a>
+                <a href="#services" class="hover:text-tealAccent transition-colors">Services</a>
+                <a href="#experience" class="hover:text-tealAccent transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-tealAccent transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-tealAccent transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="bg-tealAccent text-navy font-semibold px-4 py-2 rounded-md hover:bg-sky-400 transition-all text-sm">
+                Hire Me
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="flex-1 space-y-6">
+            <div class="inline-block px-3 py-1 bg-tealAccent/10 text-tealAccent rounded-full text-xs font-semibold tracking-wider uppercase">
+                Available for Remote Work
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                Hi, I'm <span class="text-tealAccent">Christian</span>.
+            </h1>
+            <h2 class="text-xl md:text-2xl text-slate-400 font-medium">
+                Customer Service Representative | Appointment Setter | Photo Editor
+            </h2>
+            <p class="text-slate-400 text-lg max-w-xl">
+                Dedicated and results-oriented professional with more than 5 years of experience in customer service, photo editing, and appointment setting. Skilled in managing inquiries, scheduling, and digital support.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="#contact" class="bg-tealAccent text-navy font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-sky-400 transition-all">
+                    Get In Touch
+                </a>
+                <a href="#experience" class="border border-tealAccent/40 text-tealAccent font-bold px-6 py-3 rounded-lg hover:bg-tealAccent/10 transition-all">
+                    View Experience
+                </a>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-tealAccent/30 shadow-2xl bg-slateDark">
+                <!-- Profile Image -->
+                <img src="IMG_1257.JPG" alt="Christian Macabale" class="w-full h-full object-cover object-top">
+            </div>
+            <div class="absolute -bottom-6 -left-6 bg-slateDark border border-slate-700 p-4 rounded-xl shadow-xl">
+                <p class="text-2xl font-bold text-tealAccent">5+ Years</p>
+                <p class="text-xs text-slate-400">Industry Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-slateDark/50 py-20 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-2">Core Services</h2>
+                <p class="text-slate-400">What I bring to your team</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slateDark p-8 rounded-xl border border-slate-800 hover:border-tealAccent/50 transition-all">
+                    <div class="w-12 h-12 bg-tealAccent/10 text-tealAccent rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Customer Support</h3>
+                    <p class="text-slate-400 text-sm">Experienced in voice and non-voice support (email, chat, SMS). Specialized in booking management, billing, and resolving client complaints efficiently.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-slateDark p-8 rounded-xl border border-slate-800 hover:border-tealAccent/50 transition-all">
+                    <div class="w-12 h-12 bg-tealAccent/10 text-tealAccent rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Appointment Setting</h3>
+                    <p class="text-slate-400 text-sm">Managing client engagement through inbound/outbound calls and social media outreach using tools like Calendly to optimize calendar scheduling.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-slateDark p-8 rounded-xl border border-slate-800 hover:border-tealAccent/50 transition-all">
+                    <div class="w-12 h-12 bg-tealAccent/10 text-tealAccent rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Photo & Media Editing</h3>
+                    <p class="text-slate-400 text-sm">Skilled in basic design and photo editing to support event programs, graphic asset preparation, and daily digital media operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="max-w-4xl mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-2">Work Experience</h2>
+            <p class="text-slate-400">My professional career history</p>
+        </div>
+        <div class="space-y-8 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-slate-800">
+            
+            <!-- Job 1 -->
+            <div class="relative flex items-start space-x-6">
+                <div class="w-8 h-8 rounded-full bg-tealAccent flex items-center justify-center ring-8 ring-navy text-navy font-bold text-xs shrink-0 mt-1">1</div>
+                <div class="bg-slateDark p-6 rounded-xl border border-slate-800 w-full">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Homeaglow <span class="text-tealAccent">— Customer Service Rep (Non-voiced)</span></h3>
+                        <span class="text-xs text-slate-400 bg-slate-800 px-3 py-1 rounded-full w-fit">12/2024 – Present</span>
+                    </div>
+                    <ul class="list-disc list-inside text-sm text-slate-400 space-y-1">
+                        <li>Respond to emails, chats, and SMS from Cleaner Professionals regarding appointments.</li>
+                        <li>Assist with questions and operational concerns related to customer bookings.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="relative flex items-start space-x-6">
+                <div class="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center ring-8 ring-navy text-white font-bold text-xs shrink-0 mt-1">2</div>
+                <div class="bg-slateDark p-6 rounded-xl border border-slate-800 w-full">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Dynata <span class="text-tealAccent">— Telephone Interviewer</span></h3>
+                        <span class="text-xs text-slate-400 bg-slate-800 px-3 py-1 rounded-full w-fit">08/2024 – 11/2024</span>
+                    </div>
+                    <ul class="list-disc list-inside text-sm text-slate-400 space-y-1">
+                        <li>Outbound phone calls to registered voters in the United States.</li>
+                        <li>Conducted systematic surveys and interviews following strict scripted guidelines.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="relative flex items-start space-x-6">
+                <div class="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center ring-8 ring-navy text-white font-bold text-xs shrink-0 mt-1">3</div>
+                <div class="bg-slateDark p-6 rounded-xl border border-slate-800 w-full">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Home Services <span class="text-tealAccent">— Appointment Setter</span></h3>
+                        <span class="text-xs text-slate-400 bg-slate-800 px-3 py-1 rounded-full w-fit">01/2024 – 06/2024</span>
+                    </div>
+                    <ul class="list-disc list-inside text-sm text-slate-400 space-y-1">
+                        <li>Outreach to potential clients via social media channels to secure appointments using Calendly.</li>
+                        <li>Executed both inbound and outbound communication calls.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="relative flex items-start space-x-6">
+                <div class="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center ring-8 ring-navy text-white font-bold text-xs shrink-0 mt-1">4</div>
+                <div class="bg-slateDark p-6 rounded-xl border border-slate-800 w-full">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Osborn Visual Solutions LLC <span class="text-tealAccent">— Media Creator / Photo Editor</span></h3>
+                        <span class="text-xs text-slate-400 bg-slate-800 px-3 py-1 rounded-full w-fit">09/2022 – 01/2024</span>
+                    </div>
+                    <ul class="list-disc list-inside text-sm text-slate-400 space-y-1">
+                        <li>Organized client scheduling tied to daily event visual content.</li>
+                        <li>Downloaded and edited high-volume images suited for specific programs and client specifications.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 5 -->
+            <div class="relative flex items-start space-x-6">
+                <div class="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center ring-8 ring-navy text-white font-bold text-xs shrink-0 mt-1">5</div>
+                <div class="bg-slateDark p-6 rounded-xl border border-slate-800 w-full">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Concentrix <span class="text-tealAccent">— Customer Service Representative</span></h3>
+                        <span class="text-xs text-slate-400 bg-slate-800 px-3 py-1 rounded-full w-fit">01/2021 – 09/2022</span>
+                    </div>
+                    <ul class="list-disc list-inside text-sm text-slate-400 space-y-1">
+                        <li>Assisted clients in booking household services (cleaning, installation, gardening).</li>
+                        <li>Handled booking concerns for both homeowners and service providers across phone, email, and chat.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 6 -->
+            <div class="relative flex items-start space-x-6">
+                <div class="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center ring-8 ring-navy text-white font-bold text-xs shrink-0 mt-1">6</div>
+                <div class="bg-slateDark p-6 rounded-xl border border-slate-800 w-full">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-white">Teleperformance <span class="text-tealAccent">— Customer Service Representative</span></h3>
+                        <span class="text-xs text-slate-400 bg-slate-800 px-3 py-1 rounded-full w-fit">01/2019 – 07/2020</span>
+                    </div>
+                    <ul class="list-disc list-inside text-sm text-slate-400 space-y-1">
+                        <li>Resolved customer complaints regarding account status, plans, and billings.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills & Education Section -->
+    <section id="skills" class="bg-slateDark/50 py-20 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <!-- Skills -->
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-6">Expertise & Skills</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-slateDark border border-slate-700 text-tealAccent px-4 py-2 rounded-lg text-sm">Chat & Email Support</span>
+                    <span class="bg-slateDark border border-slate-700 text-tealAccent px-4 py-2 rounded-lg text-sm">Phone Support</span>
+                    <span class="bg-slateDark border border-slate-700 text-tealAccent px-4 py-2 rounded-lg text-sm">Data Entry</span>
+                    <span class="bg-slateDark border border-slate-700 text-tealAccent px-4 py-2 rounded-lg text-sm">Appointment Setting</span>
+                    <span class="bg-slateDark border border-slate-700 text-tealAccent px-4 py-2 rounded-lg text-sm">Scheduling (Calendly)</span>
+                    <span class="bg-slateDark border border-slate-700 text-tealAccent px-4 py-2 rounded-lg text-sm">Photo Editing</span>
+                    <span class="bg-slateDark border border-slate-700 text-tealAccent px-4 py-2 rounded-lg text-sm">Basic Graphic Design</span>
+                </div>
+            </div>
+
+            <!-- Education Background -->
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-6">Education Background</h2>
+                <div class="space-y-4">
+                    <div class="bg-slateDark p-4 rounded-lg border border-slate-800">
+                        <h3 class="text-white font-bold text-md">B.S. in Information Technology</h3>
+                        <p class="text-slate-400 text-sm">University of Science and Technology of the Philippines (USTP)</p>
+                        <span class="text-xs text-tealAccent">2015 – 2018</span>
+                    </div>
+                    <div class="bg-slateDark p-4 rounded-lg border border-slate-800">
+                        <h3 class="text-white font-bold text-md">B.S. in Computer Engineering</h3>
+                        <p class="text-slate-400 text-sm">University of Science and Technology of the Philippines (USTP)</p>
+                        <span class="text-xs text-tealAccent">2014 – 2015</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & References Section -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">Get In Touch</h2>
+            <p class="text-slate-400">Feel free to reach out for collaborations or job opportunities</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- Contact Details -->
+            <div class="bg-slateDark p-8 rounded-xl border border-slate-800 space-y-4">
+                <h3 class="text-xl font-bold text-white mb-4">Contact Details</h3>
+                <p class="text-slate-400 text-sm flex items-center gap-3">
+                    <strong class="text-white w-20">Email:</strong> xianmacz@gmail.com
+                </p>
+                <p class="text-slate-400 text-sm flex items-center gap-3">
+                    <strong class="text-white w-20">Phone:</strong> +63 955 053 5070
+                </p>
+                <p class="text-slate-400 text-sm flex items-center gap-3">
+                    <strong class="text-white w-20">Location:</strong> Manolo Fortich, Bukidnon, PH
+                </p>
+                <p class="text-slate-400 text-sm flex items-center gap-3">
+                    <strong class="text-white w-20">Skype:</strong> live:.cid.96b0597f0d129e6e
+                </p>
+            </div>
+
+            <!-- References -->
+            <div class="bg-slateDark p-8 rounded-xl border border-slate-800 space-y-4">
+                <h3 class="text-xl font-bold text-white mb-4">Character References</h3>
+                <div class="border-b border-slate-800 pb-3">
+                    <p class="text-white font-semibold">Jeff Nevin A. Acere</p>
+                    <p class="text-xs text-tealAccent">Real Time Analyst</p>
+                    <p class="text-xs text-slate-400">09351977376 | jeffnevinaaceret@gmail.com</p>
+                </div>
+                <div>
+                    <p class="text-white font-semibold">Jerahn O. Omac</p>
+                    <p class="text-xs text-tealAccent">Work Colleague</p>
+                    <p class="text-xs text-slate-400">09157265700 | warrenortiza@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Footer -->
+        <div class="text-center text-xs text-slate-500 border-t border-slate-800 pt-8">
+            &copy; Christian Macabale. All rights reserved.
+        </div>
+    </section>
+
+</body>
+</html>
